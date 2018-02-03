@@ -3,26 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Train Scheduler</title>
+    <title>Friend Finder</title>
 
     <!-- Bootstrap File -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
         
     <!-- My CSS File -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <style>
+            body {background-color: powderblue;}
+            h1   {color: blue;}
+            #main {width: 100%; font-family: 'Merienda One', cursive; background-color: rgb(221, 188, 223);}
+    </style>
 
-    <!-- Moment.js Reference -->
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment.min.js></script>
 </head>
  
 <body>
+
+        <div class="container">
+
+                <div class="jumbotron no-gutters" id="main">
+                  <h1 class= "text-center">Friend Finder</h1>
+                  <hr>
+                  <h2 class= "text-center">Just few simple questions... </h2>
+                  <h2 class= "text-center">And you'll discover the friend with the greatest compatibility!</h2>
+                  <br>
+            
+                  <div>
+                    <a href="/survey"><button type="button" class="btn btn-lg btn-info btn-block"><h4><span class="glyphicon glyphicon-search"></span>  Let's do this! </h4></button></a>
+                  </div>
+            
+                </div>
+            
+                <footer class="footer">
+                  <div class="container">
+                    <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+                  </div>
+                </footer>
+            
+              </div>
+            
 
     <!-- My JS File -->
     <script type="text/javascript" src="assets/javascript/app.js"></script>

@@ -3,26 +3,250 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Train Scheduler</title>
+    <title>Survey: Friend Finder</title>
 
     <!-- Bootstrap File -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
-        
-    <!-- My CSS File -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
-
-    <!-- Moment.js Reference -->
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment.min.js></script>
+    <style>
+        body            {background-color: rgb(221, 188, 223); font-family: 'Merienda One', cursive; width: 100%;}
+        .sub-heading    {padding: 0px 40px 0px 40px;}
+        .row            {width: 100%; margin: 0;}
+        .chosen-select  {margin-bottom: 20px; margin-left: 30px;}
+        .eachHalf       {padding: 30px 80px;}
+        p, h1           {text-align: center;}
+        .firstRow       {background-color: powderblue;}
+    </style>
 </head>
- 
+
 <body>
+    <div class="container-fluid">
+        <div class="row no-gutters firstRow">
+            <div class="col-md-12">
+                <!-- Enter new employee -->
+                <div class="page-header text-center">
+                    <h1>Survey Questions </h1>
+
+                </div>
+
+                <form class="userInputs">
+                    <div class="form-group">
+                        <label for="nameInput">What is your name?</label>
+                        <input type="text" class="form-control userInputs" id="nameInput">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photoInput">Please provide a link to a photo of you:</label>
+                        <input type="text" class="form-control userInputs" id="photoInput">
+                    </div>
+                </form>
+                <br>
+                <div>
+                    <h3 class="text-center">Rate these statements on a scale of 1 (you strongly disagree) to 5 (you strongly agree)</h3>
+                </div>
+                <br>
+            </div>
+        </div>
+
+
+
+        <div class="row no-gutters secondRow">
+            <div class="col-md-6 eachHalf" id="firstHalf">
+
+
+               
+                <h4> Q1.  Everyone is entitled to an opinion.</h4>
+                <select class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+
+                
+                <h4>Q2.  People are basically good.</h4>
+                <select class="chosen-select" id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+
+                
+                <h4>Q3.  The glass is always half-full.</h4>
+                <select class="chosen-select" id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+
+               
+                <h4>Q4.  Time eases all things.</h4>
+                <select class="chosen-select" id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+
+                
+                <h4>Q5.  Expectations are the root of all suffering.</h4>
+                <select class="chosen-select" id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <!-- Enter new employee -->
+
+                <!-- <form class="form-inline" class="userInputs">
+                        <div class="form-group">
+                            <label for="nameInput">What is your name?</label>
+                            <input type="text" class="form-control userInputs" id="nameInput">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="photoInput">Please provide a link to a photo of you:</label>
+                            <input type="text" class="form-control userInputs" id="photoInput">
+                        </div>
+                    </form> -->
+            </div>
+
+
+            <div class="col-md-6 eachHalf">
+                <!-- Enter new employee -->
+               
+                <h4>Q6.  Everyone deserves a second chance.</h4>
+                <select class="chosen-select" id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h4>Q7.  There is no such thing as evil.</h4>
+                <select class="chosen-select" id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h4>Q8.  For every action there is an equal but opposite reaction.</h4>
+                <select class="chosen-select" id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h4>Q9.  Love conquers all.</h4>
+                <select class="chosen-select" id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h4>Q10. Imagination is more important than knowledge.</h4>
+                <select class="chosen-select" id="q10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <!-- <form class="form-inline" class="userInputs">
+                    <div class="form-group">
+                        <label for="nameInput">What is your name?</label>
+                        <input type="text" class="form-control userInputs" id="nameInput">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photoInput">Please provide a link to a photo of you:</label>
+                        <input type="text" class="form-control userInputs" id="photoInput">
+                    </div>
+                </form> -->
+            </div>
+        </div>
+
+        <div class="row no-gutters thirdRow">
+            <div class="col-md-12">
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    Submit
+                </button>
+            </div>
+        </div>
+
+        <br>
+        <footer class="footer">
+          <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+          </div>
+        </footer>
+    
+      </div>
+
+    </div>
+
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">
+                        <strong>Best Match</strong>
+                    </h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="close-modal" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
 
     <!-- My JS File -->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
