@@ -11,7 +11,7 @@ var friends = [
 },
 {
     "name" : "Donald",
-    "photo" : "http://photos.laineygossip.com/articles/donald-glover-black-panther-30jan18-01.jpg";
+    "photo" : "http://photos.laineygossip.com/articles/donald-glover-black-panther-30jan18-01.jpg",
     "scores" : [3,2,2,4,5,5,4,2,4,1]
 },
 {
@@ -34,10 +34,8 @@ var friends = [
     "photo" : "https://cdnph.upi.com/collection/fp/upi/11394/45c0dce616c6698de73e6c9fc6dc8add/Lupita-Nyongo-Chadwick-Boseman-attend-Black-Panther-premiere-in-LA_2_1.jpg",
     "scores" : [5,4,2,1,3,1,5,4,4,1]
 },
-{
-    "name" : "Kashka",
-    "photo" : "";
-    "scores" : [5,4,2,1,3,1,5,4,4,1]
-},
+
 
 ];
+
+module.exports = friends;

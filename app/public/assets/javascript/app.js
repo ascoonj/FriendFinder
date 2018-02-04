@@ -1,3 +1,5 @@
+var newFriend;
+
 $("#submit").on("click", function(event) {
     event.preventDefault();
 
@@ -22,7 +24,7 @@ $("#submit").on("click", function(event) {
     // If all required fields are filled
     if (validateForm()) {
       // Create an object for the user"s data
-      var userData = {
+      newFriend = {
         name: $("#nameInput").val(),
         photo: $("#photoInput").val(),
         scores: [
@@ -39,9 +41,12 @@ $("#submit").on("click", function(event) {
         ]
       };
 
-      // AJAX post the data to the friends API.
-      $.post("/api/friends", userData, function(data) {
+      console.log("form input validated");
+      
 
+      // AJAX post the data to the friends API.
+      $.post("/api/friends", newFriend, function(data) {
+        console.log(data)
         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
         $("#match-name").text(data.name);
         $("#match-img").attr("src", data.photo);
