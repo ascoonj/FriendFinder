@@ -41,7 +41,7 @@ $("#submit").on("click", function(event) {
         ]
       };
 
-      //window.location.reload();
+      
 
       console.log("form input validated");
       
@@ -61,5 +61,9 @@ $("#submit").on("click", function(event) {
       alert("Please fill out all fields before submitting!");
     }
 
-      
+    
   });
+
+  $('#results-modal').on('hidden.bs.modal', function () {
+    location.reload();
+   })
