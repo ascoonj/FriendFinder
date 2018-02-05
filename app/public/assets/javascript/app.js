@@ -41,7 +41,7 @@ $("#submit").on("click", function(event) {
         ]
       };
 
-      window.location.reload();
+      //window.location.reload();
 
       console.log("form input validated");
       

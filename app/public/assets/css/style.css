@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(221, 188, 223);
+    font-family: 'Merienda One', cursive;
+    width: 100%;
+}
+
+.sub-heading {
+    padding: 0px 40px 0px 40px;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.chosen-select {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.eachHalf {
+    padding: 30px 80px;
+}
+
+p,
+h1 {
+    text-align: center;
+}
+
+.firstRow {
+    background-color: powderblue;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    background-color: rgb(221, 220, 131);
+}
