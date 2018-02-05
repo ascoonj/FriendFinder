@@ -31,10 +31,11 @@ module.exports = function (app) {
       // push each friend's total diff (as compared to the new user) to an array
       
       diffArray.push(totalDiff);
-      console.log(diffArray);
+      //console.log(diffArray);
 
     });
     // save to a variable the index of the smallest diff in the diffArray
+    console.log(diffArray);
     var index = diffArray.indexOf(Math.min.apply(null, diffArray));
     // since each friend should have the same index in the diff array and in the friends array:
     bestMatch = friends[index];

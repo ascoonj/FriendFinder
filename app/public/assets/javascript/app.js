@@ -41,6 +41,8 @@ $("#submit").on("click", function(event) {
         ]
       };
 
+      window.location.reload();
+
       console.log("form input validated");
       
 
@@ -52,10 +54,12 @@ $("#submit").on("click", function(event) {
         $("#match-img").attr("src", data.photo);
 
         // Show the modal with the best match
-        $("#results-modal").modal("toggle");
+        $("#results-modal").modal("show");
 
       });
     } else {
       alert("Please fill out all fields before submitting!");
     }
+
+      
   });
